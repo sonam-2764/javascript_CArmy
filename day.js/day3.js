@@ -31,12 +31,24 @@
 //Primitive : Value by comparison & copy by value
 
 
-//INTRODUCTION TO MATH OBJECT
-console.log(Math.abs(-4));
-console.log(Math.PI);
-console.log(Math.ceil(2.4));//take to upper value so gives 3
-console.log(Math.floor(2.8));//takes to lower value so gives 2
-console.log(Math.log10(100));
-console.log(Math.max(20,30,11,3421,12.32));
-console.log(Math.random());//generates random value between o (included) and 1
- 
+// //INTRODUCTION TO MATH OBJECT
+// console.log(Math.abs(-4));
+// console.log(Math.PI);
+// console.log(Math.ceil(2.4));//take to upper value so gives 3
+// console.log(Math.floor(2.8));//takes to lower value so gives 2
+// console.log(Math.log10(100));
+// console.log(Math.max(20,30,11,3421,12.32));
+// console.log(Math.random());//generates random value between o (included) and 1
+
+// //satebaazi ka gime (0-9)
+//console.log(Math.random()*10);//this will give numbers between 0 to 9
+//console.log(Math.floor(Math.random()*10));//this removes the numbers after decimal
+// //generate numbers from 1 to 10
+// console.log(Math.ceil(Math.random()*10));
+// console.log(Math.floor(Math.random()*10)+1);//this could be the other approach 
+// //generate numbers from 1 to 6
+// console.log(Math.random()*6);//think like 0 and 1 ke bich rhti h values toh agar 6 se multiply kre to maximum 5.999 bnega because to be 6 it requires 1 tbhi toh 1*6 =6 but with decimals
+// console.log(Math.floor(Math.random()*6)+1);//1-6 without decimal digits
+// // Math.floor(Math.random()*total number of outcomes)+ kitna shift krna h
+// //to generate numbers between two digits
+// //(Math.floor(Math.random()*(max - min +1)+ min);
