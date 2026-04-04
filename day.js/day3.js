@@ -37,3 +37,6 @@ console.log(Math.PI);
 console.log(Math.ceil(2.4));//take to upper value so gives 3
 console.log(Math.floor(2.8));//takes to lower value so gives 2
 console.log(Math.log10(100));
+console.log(Math.max(20,30,11,3421,12.32));
+console.log(Math.random());//generates random value between o (included) and 1
+ 
