@@ -19,8 +19,8 @@
 // let obj2 ={
 //     name:"mohit"
 // }
-// console.log(obj1==obj2);//this checks by reference they check whether they point to the same refernce 
-// //in this case they both points to the different references 
+// console.log(obj1==obj2);//this checks by reference they check whether they point to the same refernce
+// //in this case they both points to the different references
 // let obj2 = obj1;
 // console.log(obj2 == obj1);//this will give true as now they both are pointing to the same reference
 
@@ -45,10 +45,10 @@
 //console.log(Math.floor(Math.random()*10));//this removes the numbers after decimal
 // //generate numbers from 1 to 10
 // console.log(Math.ceil(Math.random()*10));
-// console.log(Math.floor(Math.random()*10)+1);//this could be the other approach 
+// console.log(Math.floor(Math.random()*10)+1);//this could be the other approach
 // //generate numbers from 1 to 6
 // console.log(Math.random()*6);//think like 0 and 1 ke bich rhti h values toh agar 6 se multiply kre to maximum 5.999 bnega because to be 6 it requires 1 tbhi toh 1*6 =6 but with decimals
 // console.log(Math.floor(Math.random()*6)+1);//1-6 without decimal digits
 // // Math.floor(Math.random()*total number of outcomes)+ kitna shift krna h
-// //to generate numbers between two digits
+// //to generate numbers between any two digits
 // //(Math.floor(Math.random()*(max - min +1)+ min);
