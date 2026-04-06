@@ -52,3 +52,7 @@
 // // Math.floor(Math.random()*total number of outcomes)+ kitna shift krna h
 // //to generate numbers between any two digits
 // //(Math.floor(Math.random()*(max - min +1)+ min);
+
+// //OTP GENERATION: 4 digit(1000 - 9999)
+//console.log(Math.floor(Math.random()*(9999 - 1000 +1)) + 1000);
+
