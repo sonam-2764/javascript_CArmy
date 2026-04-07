@@ -46,4 +46,4 @@
 // console.log(c);
 // console.log(24+ "Sonam");//convets 24 to string and concatenate 24 and sonam
 // console.log(24+"Sonam"+10);//similarly converts 24 and 10 to string
-// console.log(24 + 30 +"Sonam");//adds 24 and 30 and convetrs their sum as string and concatenate them
+// console.log(24 + 30 +"Sonam");//adds 24 and 30 and convetrs their sum as string and concatenate them with sonam

@@ -204,17 +204,17 @@
 
 // || logical or
 
-let a = 0;
-let b = 20;
+// let a = 0;
+// let b = 20;
 
-console.log(a || b);
-// &&: If first value is true, it will return the first value itself
-// If first value is false, it will return second
+// console.log(a || b);
+// // &&: If first value is true, it will return the first value itself
+// // If first value is false, it will return second
 
-// !=
-// console.log(5!=5);
+// // !=
+// // console.log(5!=5);
 
 
-// AND: & , | or
+// // AND: & , | or
 
-console.log(2 & 5);
+// console.log(2 & 5);
