@@ -90,7 +90,7 @@
 
 // // Timestamp
 // const now = Date.now();
-// console.log(now); //prints time in milliseconds
+// console.log(now); //prints time in milliseconds//utc time
 // const dates = new Date(1759275037293);
 // // console.log(dates.toString());
 // const dates = new Date(0); //it shows ki miliseconds zero kb tha
@@ -98,5 +98,8 @@
 console.log(dates);
 console.log(now);
 // 1759272851288: TimeStamp
-
+// //type this n console of a browser 
+// const dates = new Date(1759275037293);
+//dates
+// then browser convers the utc time in milliseconds into IST and returns the indian time
 
