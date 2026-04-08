@@ -48,7 +48,53 @@
 // console.log(24+"Sonam"+10);//similarly converts 24 and 10 to string
 // console.log(24 + 30 +"Sonam");//adds 24 and 30 and convetrs their sum as string and concatenate them with sonam
 
-//replacing substring
-console.log(str.replace("ode", "iam"));
-console.log(str.replaceAll("ode","iam"));//replaces eveywhere it see ode in entire string
+// //replacing substring
+// console.log(str.replace("ode", "iam"));
+// console.log(str.replaceAll("ode","iam"));//replaces eveywhere it see ode in entire string
+
+// // trimming whitespaces
+// // .trim()-----removes whitespace from both the begining and end of the string
+// // .trimStart()//.trimEnd()-----removes whitespace from only the start or the end
+// const user = "  Rohit  Negi ";
+// console.log(user.trim());
+
+// //split
+// const names = "Rohit Mohit Suraj Rohan Anjali";
+
+// console.log(names.split(" ")) //splits on the basis of space and returns the data in form of array
+// console.log(names.split(","))
+
+
+// //DATE AND TIME --- it takes time from our system
+// const now = new Date();
+// //question --how does js got access to my system time
+// console.log(now);//it shows utc universal time coordinate
+// console.log(now.toString());// according to indian standard time
+// console.log(now.toISOString());
+// console.log(now.toLocaleString());
+// // Local time chal rha
+// console.log(now.getDay());
+// console.log(now.getDate());
+// console.log(now.getFullYear());
+// console.log(now.getMonth());//it starts from 0 ...january is 0
+// console.log(now.getHours());
+// console.log(now.getSeconds());
+
+// days: Mon-tue(1 based)//meaning starts from 1
+// Month: 0 1// meaning starts from 0
+
+// year month date hour minute second millisecond
+// const now = new Date(2025,8,20,8,25,16,125);
+// console.log(now.toString());
+
+
+// Timestamp
+const now = Date.now();
+const dates = new Date(1759275037293);
+// console.log(dates.toString());
+
+console.log(dates);
+console.log(now);
+// 1759272851288: TimeStamp
+
 
