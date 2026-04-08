@@ -88,10 +88,12 @@
 // console.log(now.toString());
 
 
-// Timestamp
-const now = Date.now();
-const dates = new Date(1759275037293);
-// console.log(dates.toString());
+// // Timestamp
+// const now = Date.now();
+// console.log(now); //prints time in milliseconds
+// const dates = new Date(1759275037293);
+// // console.log(dates.toString());
+// const dates = new Date(0); //it shows ki miliseconds zero kb tha
 
 console.log(dates);
 console.log(now);
