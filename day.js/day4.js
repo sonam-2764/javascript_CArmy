@@ -35,7 +35,7 @@
 // console.log(str.slice(-5,-2));
 
 // //SUBSTRING //we can't mark -ve index
-// const str = `Hello Coder Army Coder`;
+//const str = `Hello Coder Army Coder`;
 // console.log(str.substring(2,5));
 
 
@@ -47,3 +47,8 @@
 // console.log(24+ "Sonam");//convets 24 to string and concatenate 24 and sonam
 // console.log(24+"Sonam"+10);//similarly converts 24 and 10 to string
 // console.log(24 + 30 +"Sonam");//adds 24 and 30 and convetrs their sum as string and concatenate them with sonam
+
+//replacing substring
+console.log(str.replace("ode", "iam"));
+console.log(str.replaceAll("ode","iam"));//replaces eveywhere it see ode in entire string
+
