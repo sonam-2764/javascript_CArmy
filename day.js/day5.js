@@ -27,17 +27,17 @@
 // console.log(arr);
 
 
-// Starting add kar sakta hu, delete the element at first place
+// Starting add kar sakta hu
 
 // arr.unshift(10);
 // arr.unshift(50);
 // console.log(arr);
 
-// // delete kar sakta hu
+// // starting se delete kar sakta hu
 
 // arr.shift();
 // console.log(arr);
-
+// // it is advised not to use shift and unshift because ek kko shift krne k liye bohut saare elements ko shift krna pdta h ...it can hamper performance
 
 // let arr = [10,30,50,90,11];
 
