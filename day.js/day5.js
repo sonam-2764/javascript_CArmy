@@ -98,21 +98,27 @@
 // console.log(names.includes("Bobs"));
 
 // names.sort();
+// console.log(names);//compares them on basis of ascii table
 // names.reverse();
-
 // console.log(names);
 
 // const a = ["101","90","80","32","91"];
-// const arr = [10,"Rohit","Mohan",true];
+// a.sort();
+// console.log(a);
+// // it sees even number as characters 101 is listed before 90 because ascii code of 1 is less than 9
 
+// const arr = [10,"Rohit","Mohan",true];
 // arr.sort();
 // console.log(arr);
+// why the rule of ascii ? Because in js array contains data from all data type ...number, string, boolean etc..
 
+
+// //custom sorting
 // const arr = [10,40,31,71,5,11];
-
 // arr.sort((a,b)=> a-b);
 // // ascending order
 
+// //descending order
 // arr.sort((a,b)=> b-a);
 
 // 40,10
@@ -122,9 +128,8 @@
 // a = 10
 // b = 31
 
-// -ve : pehle a aayega fr aayega
-// +ve: b aayega fr a aayge
-
+// //-ve : pehle a aayega fr aayega
+// //+ve: b aayega fr a aayge
 // console.log(arr);
 
 
