@@ -133,11 +133,13 @@
 // console.log(arr);
 
 
+// //NESTED ARRAY
 // const arr = [10,30,50,[40,90,[60,19,99],11], 80];
-
-// const a = arr.flat(Infinity);
-// console.log(a);
 // console.log(arr[3][2][1]);
+// const a = arr.flat(Infinity);
+// //infinity means flatten all the array if we write 1 then it will flatten to 1 level
+// console.log(a);
+
 
 
 const a = [10,309,"Rohit",9.3, true];
