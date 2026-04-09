@@ -40,48 +40,52 @@
 // // it is advised not to use shift and unshift because ek kko shift krne k liye bohut saare elements ko shift krna pdta h ...it can hamper performance
 
 // let arr = [10,30,50,90,11];
-
+// // ek ek krke array ki element ko print krna h
 // for(let i=0;i<arr.length;i++){
 //     console.log(arr[i]);
 // }
-
+// //other way to do the same
 // for(let num of arr){
 //     console.log(num);
 // }
+
 
 // let arr = [10,30,50,90,11];
 // let arr2 = arr;
 
 // arr2.push(30);
-
+// //original array will also change because they(object) change by reference
 // console.log(arr);
 // Object(non primitive): Copy by reference hote hai
 // Primitive: Copy by value
 
-// const arr = [10,30,50,90,11];
+// const arr = [10,30,50,90,11]
+// arr = [20,3,40]; //its not possible because array is already constant
 // arr[2] = 30;
-
-
-
 // console.log(arr);
 
 
 // const arr = [10,30,50,90,11];
 // const arr2 = arr.slice(2,4);
 // console.log(arr);
-// const arr3 = arr.splice(1,3,"Rohit",19);
+// //this didn't change the original array
+// const arr3 = arr.splice(1,3,"Rohit",19);//this changes the original array
 // console.log(arr3);
 
 // const arr = [10,30,50,90,11];
 // const arr2 = ["Rohit",11,true];
+// arr.push(arr2);
+// console.log(arr);
 // const arr4 = [90,4,false];
 
 // arr.push(arr2);
 // const arr3 = arr.concat(arr2,arr4);
 // const arr3 = [arr,arr2,arr4];
+// // this gives whole arrays together
 
-// spread operator
 
+// //spread operator
+// // this takes out elements from all the arays and combine them together as a single array
 // const arr3= [...arr,...arr2,...arr4];
 // console.log(arr3);
 
