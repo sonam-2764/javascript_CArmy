@@ -1,5 +1,4 @@
 // OBJECT
-// object
 // key value
 // const user = {
 //    name: "Rohit",
