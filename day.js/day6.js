@@ -9,8 +9,8 @@
 //    "home address": "dwarka"
 // }
 
-
-// console.log(user["name"]);
+// console.log(user);
+// console.log(user["name"]);//stores it as a string so without double quotes it would be wrong
 // console.log(user.age);
 // console.log(user["age"]);
 // console.log(user["home address"]);
