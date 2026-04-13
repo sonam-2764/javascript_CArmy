@@ -41,7 +41,7 @@
 // const user2 = user;
 // user2.age = 90;
 
-// console.log(user);
+// console.log(user);// this will change the user data also since both of them are pointing to same data
 
 // Important
 
