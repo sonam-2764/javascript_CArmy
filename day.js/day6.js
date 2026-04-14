@@ -148,10 +148,11 @@
 // } // object defined inside object address object is defined under user object
 // console.log(user);
 
-// shallow copy
-// const user2 = {...user};
+// //shallow copy
+// const user2 = user; //this will point to same user and any change will be implemented in both
+// const user2 = {...user};//this will create seperate copy and the change will be implemented in user2 only
 // user2.name = "Mohan";
-// user2.address.city = "Dwarka";
+// user2.address.city = "Dwarka"; // this will again change both the user because of nested object
 
 // console.log(user2);
 
