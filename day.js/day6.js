@@ -74,7 +74,7 @@
 //     console.log(values);
 // }
 
-// console.log(Object.entries(user));
+// console.log(Object.entries(user));//returns in form of an array
 // [
 //   [ 'name', 'Rohit' ],
 //   [ 'age', 20 ],
@@ -85,13 +85,14 @@
 // for(let [keys,values] of Object.entries(user)){
 //     console.log(keys, values);
 
-// }
+// } // it gives the result but not in array form...destructing 
 
 
 // const name = user.name;
 // const age = user.age;
 
 // object ko destructing karna
+// const {name,age,amount} = user;
 // const {name:userName,age:userAge} = user;
 
 // const arr = [10,20,40,90,11];
@@ -100,6 +101,7 @@
 
 // console.log(userName,userAge);
 // console.log(first,second);
+
 
 
 // const user = {
@@ -112,6 +114,7 @@
 //     return 20;
 //    }
 // }
+// user.greeting();
 
 // const user2 = {
 //     name:"Mohan",
@@ -121,14 +124,17 @@
 //     return 20;
 //    }
 // }
+// // the whole function after gereeting went in user 2 that will print user.name as rohit to avoid this we use this.name
 
 // user2.greeting = user.greeting;
 
 // user2.greeting();
-// const va = user.greeting();
-// console.log(va);
+// const va = user.greeting(); //variable holds the return value
+// console.log(va); // prints the return value
 
-// nested object
+
+
+// //nested object
 
 // const user = {
 //    name: "Rohit",
@@ -139,7 +145,8 @@
 //     city:"kotdwar",
 //     state:"Uttarkhand"
 //    }
-// }
+// } // object defined inside object address object is defined under user object
+// console.log(user);
 
 // shallow copy
 // const user2 = {...user};
