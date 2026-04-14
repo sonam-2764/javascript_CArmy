@@ -161,11 +161,11 @@
 
 // deep copy
 
-// const user2 = structuredClone(user);
+// const user2 = structuredClone(user); // creates independent copy ...both are purely different from each other
 // user2.address.city = "Dwarka";
 // console.log(user);
 // keY; String || Symbol
-
+// // the value of key can be symbol or string
 // const sym = Symbol("id");
 
 // const user = {
@@ -175,9 +175,10 @@
 //     2: "Mohan",
 //     [sym]:"Hello Ji"
 // }
+// console.log(user.["0"]);
 
 // const arr = [10,20,30,40];
-
+// //this is stored in this form object form
 // {
 //     0:10,
 //     1:20,
