@@ -44,3 +44,13 @@
 //     console.log(sum);
 //  }
 //  addNumber(10,20,30);
+
+// const arr = [10,20,30,40,50];
+// // const [first,second] = arr; //destructuing of array 
+// console.log(first,second);
+// const [first,second,...num] = arr;//stores rest number in form of array 
+// console.log(first,second, num); 
+// const arr2 =[30,70,90,10];
+// const ans = [...arr,...arr2];
+// console.log(ans);
+// //spread operators opens the array or object and rest operator helps in catching many individual values
