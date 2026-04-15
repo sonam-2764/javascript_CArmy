@@ -166,6 +166,8 @@
 // console.log(user);
 // keY; String || Symbol
 // // the value of key can be symbol or string
+
+
 // const sym = Symbol("id");
 
 // const user = {
