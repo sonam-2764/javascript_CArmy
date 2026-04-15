@@ -54,3 +54,20 @@
 // const ans = [...arr,...arr2];
 // console.log(ans);
 // //spread operators opens the array or object and rest operator helps in catching many individual values
+
+
+
+// //FUNCTION : expression
+// const addNumber = function(num1,num2){
+//     return num1 + num2;
+// }
+// console.log(addNumber(3,4));
+
+// //function declaration allows to call function before declaring whereas function expression doesn't allow to call function before declaring
+
+
+
+
+
+//ARROW FUNCTION
+
