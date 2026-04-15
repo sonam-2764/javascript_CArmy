@@ -69,5 +69,26 @@
 
 
 
-//ARROW FUNCTION
+// //ARROW FUNCTION
+// // ()=>{}
+// const addNumber = (num1,num2)=> {
+//     console.log("Hello");
+//     return num1 +num2;
+// }
+// console.log(addNumber(3,4));
+
+// // if we are returning only one value
+// const addNumber =(num1,num2) => num1+num2;
+// console.log(addNumber(3,4));
+// const sqaureNumber =(num) => num*num;
+// console.log(squareNumber(6));
+ 
+// //arrow single paremeter 
+// // if we have single parameter no need of () or return or {}
+// const sqaureNumber = num => num*num;
+//  console.log(squareNumber(6));
+
+
+
+
 
