@@ -189,3 +189,7 @@
 // }
 
 console.log(user[sym]);
+// //base address +index*size of data
+// but the problems with array in js is they do not have single data type so we don't know size of data
+// //to solve this problem we store the number in array but address of strings in array so now it is contigous memory locsation
+// whenever any array of different type or string or key store it somewhere else and store the address in that memory location because isse agar cahnge krte h string to bhi problem nhi hogi dusre elements ko as address bs change hogi....
