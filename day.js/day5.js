@@ -86,6 +86,7 @@
 
 // //spread operator
 // // this takes out elements from all the arays and combine them together as a single array
+// //It basically expands an array or object into individual elements.
 // const arr3= [...arr,...arr2,...arr4];
 // console.log(arr3);
 
