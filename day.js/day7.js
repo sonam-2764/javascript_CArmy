@@ -106,3 +106,10 @@
 // const greeting = ()=> { name:"Sonam",age:20} //this throws an error as whenever the arrow function sees { this expects a return statement
 // const greeting = ()=> ({name:"Sonam", age:20});
 // console.log(greeting());
+
+
+// //IIFE(Immediately invoked function)
+// (function greet(){
+//     console.log("Hello");
+// })(); 
+// //()this will define function and ()will call the function immediately at that step only
