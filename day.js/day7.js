@@ -91,4 +91,18 @@
 
 
 
+// //RETURNING THE OBJECT USING ARROW FUNCTION
+// const greeting = ()=> {
+//     let user = {
+//         name:Sonam,
+//         age:20,
+//     }
+//     return user;
+// }
+// console.log(greeting());
 
+
+
+// const greeting = ()=> { name:"Sonam",age:20} //this throws an error as whenever the arrow function sees { this expects a return statement
+// const greeting = ()=> ({name:"Sonam", age:20});
+// console.log(greeting());
