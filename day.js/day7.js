@@ -140,9 +140,13 @@
 // function greet(){
 //     console.log("Hello, kaise ho")
 // }
+// function dance(callback){
+//        console.log("I am dancing");
+// }
 // function meet(callback){
 //     console.log("I'm going to meet someone");
 //     callback();
 //  console.log("I have finished meeting")
 // }
 // meet(greet);
+// meet(dance);
