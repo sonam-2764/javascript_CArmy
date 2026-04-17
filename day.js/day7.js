@@ -123,3 +123,26 @@
 // })();
 
 
+
+
+// //CALLBACK FUNCTION
+// //it is a function passed as an argument to another function
+// function greet(){
+//     console.log("Hello, kaise ho")
+// }
+// function meet(){
+//     console.log("I'm going to meet someone");
+// }
+// meet(greet());//this will call/print the greet function then the meet function
+
+
+// //we want that first i am going to meet to be printed then i want to call greet function and then the statement i have finished meeting
+// function greet(){
+//     console.log("Hello, kaise ho")
+// }
+// function meet(callback){
+//     console.log("I'm going to meet someone");
+//     callback();
+//  console.log("I have finished meeting")
+// }
+// meet(greet);
