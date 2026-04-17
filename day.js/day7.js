@@ -140,7 +140,7 @@
 // function greet(){
 //     console.log("Hello, kaise ho")
 // }
-// function dance(callback){
+// function dance(){
 //        console.log("I am dancing");
 // }
 // function meet(callback){
@@ -150,3 +150,22 @@
 // }
 // meet(greet);
 // meet(dance);
+
+
+
+// //example of callback order placed and payment
+// //Imagine a scenario where zomato order is placed later zomato tied up with blinkit now blinkit will not write entire code again instead we can use zomato's code with some modification
+
+// function blinkitOrderPlaced(){
+//     console.log("We have started packing your order");
+// }
+// function zomatoOrderPlaced(callback){
+//     console.log("We have started preparing your food");
+// }
+// function payment(amount,callback){
+//     console.log(`${amount} payment has initialized`);
+//     console.log("Payment is received");
+//     callback();
+// }
+// //payment(500,zomatoOrderPlaced);
+// payment(500,blinkitOrderPlaced);
