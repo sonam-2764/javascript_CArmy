@@ -108,8 +108,18 @@
 // console.log(greeting());
 
 
+
+
+
 // //IIFE(Immediately invoked function)
 // (function greet(){
 //     console.log("Hello");
 // })(); 
 // //()this will define function and ()will call the function immediately at that step only
+
+// //Arrow function IIFE
+// (function greeting(){
+//     console.log("Hello");
+// })();
+
+
