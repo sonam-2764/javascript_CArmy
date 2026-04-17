@@ -169,3 +169,16 @@
 // }
 // //payment(500,zomatoOrderPlaced);
 // payment(500,blinkitOrderPlaced);
+
+
+
+
+
+
+
+// Here's why — arrow functions don't have their own this. They inherit this from the surrounding scope, which here is the global scope where this.name doesn't exist.
+// This is one of the most asked JS interview questions:
+
+// "When would you NOT use an arrow function?"
+
+// Answer: Inside an object method when you need this to refer to the object. Always use regular function for object methods.
