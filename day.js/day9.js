@@ -29,3 +29,26 @@
 // //agar kbhi andar vo function na ho toh pehle vo apne aas paas k block me vo variable dhundega jahan value dikhi print
 // //LET supports global and functional but not block
 
+function createCounter(){
+    function increment(){
+        console.log("I'm increment function");
+    }
+    // increment();
+    return increment;//we returned the reference of increment .... [Function : increment]
+    // //so if we return something we need to store it somewhere
+}
+const count = createCounter();
+console.log(count); //it shows [Function : increment]
+count();
+
+// // //UNDERSTANDING AND BREAKING THE CODE ....
+// function createCounter() {
+//     function increment() {
+//         console.log("I'm increment function");
+//     }
+//     return increment; // ← returning the function ITSELF, not increment()
+// }
+
+// const count = createCounter(); // count now holds the increment function
+// console.log(count);            // prints: [Function: increment]
+// count();                       // NOW it executes → "I'm increment function"
