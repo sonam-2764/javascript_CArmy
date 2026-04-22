@@ -58,18 +58,58 @@
 
 
 
-function createCounter() {
-    let count = 0; // private variable
-    function increment() {
-        count++;
-        console.log(count);
-    }
-    return increment;
-}
+// function createCounter() {
+//     let count = 0; // private variable
+//     function increment() {
+//         count++;
+//         console.log(count);
+//     }
+//     return increment;
+// }
 
-const counter = createCounter();
-counter(); // 1
-counter(); // 2
-counter(); // 3
-//how is it possible that we can access count because that's outside of increment 
-// I is possible because of CLOSURE as closure= a function that rememberrs variable from its outer scope even after the outer function hass finished executing
+// const counter = createCounter();
+// //console.log(counter());
+// counter(); // 1
+// counter(); // 2
+// counter(); // 3
+// //how is it possible that we can access count because that's outside of increment 
+// //It is possible because of CLOSURE as closure= a function that rememberrs variable from its outer scope even after the outer function hass finished executing
+
+
+
+// //USECASE OF CLOSURE
+//let balance =500;
+// //suppose by mistake we change the balance becqause we have direct access of balance
+// balance +="Sonam";
+// console.log(balance);
+// //to solve this problem we create object restricting direct access
+
+let user = {
+    balance : 500,
+    deposit :function(amount){
+        if(typeof amount === "number" && amount >0){
+        console.log(this); //this - points out to the reference
+        this.balance += amount;
+        return this.balance;
+    }
+},
+//console.log(user.deposit(200));
+    
+// //now this will not allow any string or else to change balance and it still has the access of balance as 
+        withdraw :function(amount){
+        if(typeof amount === "number" && amount >0 && this.balance >= amount){13455
+        this.balance -= amount;
+        return this.balance;
+    }
+        },
+        getBalance : function(){
+            return this.balance;
+        }
+    }
+
+user.balance = "sonam";
+console.log(user.getBalance());
+// this still creates problem 
+//we want ki user method ko access(function) ko access kr paye
+// balance: usko directly access nhi kr paye 
+
