@@ -78,38 +78,71 @@
 
 
 // //USECASE OF CLOSURE
-//let balance =500;
-// //suppose by mistake we change the balance becqause we have direct access of balance
-// balance +="Sonam";
-// console.log(balance);
-// //to solve this problem we create object restricting direct access
+// //let balance =500;
+// // //suppose by mistake we change the balance becqause we have direct access of balance
+// // balance +="Sonam";
+// // console.log(balance);
+// // //to solve this problem we create object restricting direct access
 
-let user = {
-    balance : 500,
-    deposit :function(amount){
-        if(typeof amount === "number" && amount >0){
-        console.log(this); //this - points out to the reference
-        this.balance += amount;
-        return this.balance;
-    }
-},
-//console.log(user.deposit(200));
+// let user = {
+//     balance : 500,
+//     deposit :function(amount){
+//         if(typeof amount === "number" && amount >0){
+//         console.log(this); //this - points out to the reference
+//         this.balance += amount;
+//         return this.balance;
+//     }
+// },
+// //console.log(user.deposit(200));
     
-// //now this will not allow any string or else to change balance and it still has the access of balance as 
-        withdraw :function(amount){
-        if(typeof amount === "number" && amount >0 && this.balance >= amount){13455
-        this.balance -= amount;
-        return this.balance;
-    }
-        },
-        getBalance : function(){
-            return this.balance;
+// // //now this will not allow any string or else to change balance and it still has the access of balance as 
+//         withdraw :function(amount){
+//         if(typeof amount === "number" && amount >0 && this.balance >= amount){13455
+//         this.balance -= amount;
+//         return this.balance;
+//     }
+//         },
+//         getBalance : function(){
+//             return this.balance;
+//         }
+//     }
+
+// user.balance = "sonam";
+// console.log(user.getBalance());
+// // this still creates problem 
+// //we want ki user method ko access(function) ko access kr paye
+// // balance: usko directly access nhi kr paye 
+
+
+
+
+function createBankAccount(){
+
+    let balance = 500;
+    return { //returns user ...shortcut to write instead of line 123 and 142 
+    //const user = {
+    deposit: function(amount){
+        if(typeof amount==="number" && amount>0){
+        balance+=amount;
+        return balance;
         }
+    },
+    withdraw: function(amount){
+        if(typeof amount==="number" && amount>0 && balance>=amount){
+        balance-=amount;
+        return balance;
+        }
+    },
+    getBalance: function(){
+        return balance;
+    }
+    
     }
 
-user.balance = "sonam";
-console.log(user.getBalance());
-// this still creates problem 
-//we want ki user method ko access(function) ko access kr paye
-// balance: usko directly access nhi kr paye 
+ //return user;
+}
+// now developer can't directly access balance
 
+const customer= createBankAccount();
+console.log(customer);
+//console.log(customer.getBalance(200));
