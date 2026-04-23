@@ -115,34 +115,54 @@
 
 
 
+// // ACCIDENTAL CHANGES KO AVOID KRTA H FUNCTION K BAHAR SE KUCH CHANGE NHI KR SKTE
+// function createBankAccount(){
 
-function createBankAccount(){
-
-    let balance = 500;
-    return { //returns user ...shortcut to write instead of line 123 and 142 
-    //const user = {
-    deposit: function(amount){
-        if(typeof amount==="number" && amount>0){
-        balance+=amount;
-        return balance;
-        }
-    },
-    withdraw: function(amount){
-        if(typeof amount==="number" && amount>0 && balance>=amount){
-        balance-=amount;
-        return balance;
-        }
-    },
-    getBalance: function(){
-        return balance;
-    }
+//     let balance = 500;
+//     return { //returns user ...shortcut to write instead of line 123 and 142 
+//     //const user = {
+//     deposit: function(amount){
+//         if(typeof amount==="number" && amount>0){
+//         balance+=amount;
+//         return balance;
+//         }
+//     },
+//     withdraw: function(amount){
+//         if(typeof amount==="number" && amount>0 && balance>=amount){
+//         balance-=amount;
+//         return balance;
+//         }
+//     },
+//     getBalance: function(){
+//         return balance;
+//     }
     
+//     }
+
+//  //return user;
+// }
+// // now developer can't directly access balance
+
+// const customer= createBankAccount();
+// console.log(customer);
+// //console.log(customer.getBalance(200));
+
+
+
+
+// //HIGHER ORDER FUNCTION
+// Higher Order Functions in JavaScript
+// A Higher Order Function (HOF) is a function that either:
+
+// Takes one or more functions as arguments, or
+// Returns a function as its result
+function double(value){
+    return function execute(num){
+        return num*value;
     }
-
- //return user;
 }
-// now developer can't directly access balance
-
-const customer= createBankAccount();
-console.log(customer);
-//console.log(customer.getBalance(200));
+// const n = double(20);
+// console.log(n(5));
+//above two lines and below 2 lines will produce the same result
+ const n = double(20)(5);
+ console.log(n); 
