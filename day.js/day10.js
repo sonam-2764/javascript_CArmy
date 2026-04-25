@@ -21,7 +21,13 @@
 
 
 // //FILTER : It is used to select specific elements from the array 
-const arr = [10,20,30,50,70];
-// arr.filter((number) => number >25); // this returns a new array
-const newArr = arr.filter((number) => number >25);
-console.log(newArr);
+// const arr = [10,20,30,50,70];
+// // arr.filter((number) => number >25); // this returns a new array
+// const newArr = arr.filter((number) => number >25);
+// console.log(newArr);
+
+Array.filtering = function(compare){
+    for(let num of arr){//can write 'this' word in place of arr
+        if(compare)
+    }
+}
