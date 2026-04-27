@@ -26,8 +26,14 @@
 // const newArr = arr.filter((number) => number >25);
 // console.log(newArr);
 
-Array.filtering = function(compare){
-    for(let num of arr){//can write 'this' word in place of arr
-        if(compare)
-    }
-}
+// Array.filtering = function(compare){
+//     const ans =[];
+//     for(let num of arr){//can write 'this' word in place of arr
+//         if(compare(num)){
+//             ans.push(num);
+//         }
+//     }
+//     return ans;
+// }
+// const newArr=arr.filtering((num)=> num >25);
+// console.log(newArr);
