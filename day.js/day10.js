@@ -170,3 +170,37 @@ for(let [keys,value] of m1){
     console.log(keys, value);
 
 }
+
+
+
+
+
+
+
+
+
+
+//MAPPING CLAUDE
+// A factory machine that takes in items on a conveyor belt and transforms each one, giving you a brand new box of transformed items.
+// What it does
+// Creates a new array by transforming every element. Original array is not changed. Same length in → same length out.
+
+
+// const prices = [100, 200, 300];
+
+// // Add 10% tax to every price
+// const withTax = prices.map(price => price * 1.1);
+// // withTax = [110, 220, 330]
+
+// // Transform objects too!
+// const products = [
+//   { name: "shirt", price: 500 },
+//   { name: "pants", price: 800 }
+// ];
+// const names = products.map(p => p.name);
+// // names = ["shirt", "pants"]
+
+
+// const nums = [1, 2, 3, 4, 5];
+// const doubled = nums.map(n => n * 2);
+// console.log(doubled);
