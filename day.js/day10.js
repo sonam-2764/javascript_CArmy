@@ -335,6 +335,26 @@ for(let [keys,value] of m1){
 
 
 
+//FOR EACG CLAUDE
+// 🧠 Think of it like...
+// A waiter going to every table and taking an order. He visits all — but doesn't bring anything back.
+// What it does
+// Loops through every item in an array. Perfect for printing, logging, or doing something with each item. It does NOT return a new array.
+
+// const fruits = ["🍎 apple", "🍌 banana", "🍇 grapes"];
+
+// fruits.forEach(function(fruit) {
+//   console.log(fruit); // prints each one
+// });
+
+// // Arrow function (shorter way):
+// fruits.forEach(fruit => console.log(fruit));
+
+
+
+
+
+
 
 
 
