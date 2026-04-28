@@ -330,3 +330,60 @@ for(let [keys,value] of m1){
 // studentMap.set("Sneha", { marks: 78, city: "Indore" });
 // console.log(studentMap.get("Rahul"));
 // console.log("Total students:", studentMap.size);
+
+
+
+
+
+
+
+
+
+
+
+// ## `...` (Spread Operator) before `new Set()`
+
+// ```js
+// const tags = ["js", "css", "js", "html"];
+// const unique = [...new Set(tags)];
+// ```
+
+// `new Set(tags)` gives you a **Set object** — not an array. It looks like this:
+// ```
+// Set { "js", "css", "html" }
+// ```
+
+// You **can't use array methods** like `.map()`, `.filter()` etc. on a Set. So you need to **convert it back to an array**.
+
+// The `...` (spread operator) says: *"take every item out of this Set and spread them into a new array `[]`"*
+
+// ```js
+// new Set(tags)       // → Set object (not an array)
+// [...new Set(tags)]  // → ["js", "css", "html"]  ✅ real array
+// ```
+
+// You could also write it as `Array.from(new Set(tags))` — same result, just longer.
+
+// ---
+
+// ## `, 0` in `reduce()`
+
+// ```js
+// const cart = [199, 499, 149];
+// const total = cart.reduce((acc, cur) => acc + cur, 0);
+// ```
+
+// The `, 0` is the **starting value of `acc`** (the accumulator).
+
+// Think of it like this — before reduce even looks at the first item, `acc` needs a starting value. You're telling it: *"start with 0, then keep adding"*
+
+// | Step | acc | cur | Result |
+// |------|-----|-----|--------|
+// | Start | **0** | — | 0 |
+// | 1st | 0 | 199 | 199 |
+// | 2nd | 199 | 499 | 698 |
+// | 3rd | 698 | 149 | **847** |
+
+// **What if you skip the `, 0`?**
+// Reduce will use the **first item as the starting acc** and skip it — which works for simple sums, but can cause bugs in many situations. Always safer to provide it explicitly.
+
