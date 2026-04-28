@@ -257,3 +257,31 @@ for(let [keys,value] of m1){
 // const cart = [199, 499, 149, 299];
 // const total = cart.reduce((acc, cur) => acc + cur, 0);
 // console.log("Total: ₹" + total);
+
+
+
+
+
+
+//SET CLAUDE
+// 🧠 Think of it like...
+// A bag that refuses to hold duplicates. Try to put the same thing in twice — it only keeps one copy. Great for unique lists!
+// What it does
+// A Set is a collection of unique values. No duplicates allowed. It's also faster than arrays for checking if something exists.
+
+//  Remove duplicates from an array (1 line!)
+// const cities = ["Delhi", "Mumbai", "Delhi", "Pune", "Mumbai"];
+// const unique = [...new Set(cities)];
+// // unique = ["Delhi", "Mumbai", "Pune"]
+
+// // Other Set operations:
+// const s = new Set([1, 2, 3]);
+// s.add(4);       // adds 4
+// s.has(2);       // true
+// s.delete(3);    // removes 3
+// s.size;          // 3
+
+// const tags = ["js", "css", "js", "html", "css", "js"];
+// const unique = [...new Set(tags)];
+// console.log(unique);
+// console.log("Count:", unique.length);
