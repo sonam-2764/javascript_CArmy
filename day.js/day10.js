@@ -228,3 +228,32 @@ for(let [keys,value] of m1){
 // const ages = [14, 18, 21, 16, 25, 13];
 // const adults = ages.filter(age => age >= 18);
 // console.log(adults);
+
+
+
+
+
+
+
+//REDUCE CLAUDE
+// 🧠 Think of it like...
+// A snowball rolling down a hill. It starts small (the initial value) and accumulates everything as it rolls — ending up as one big value.
+// What it does
+// Reduces an entire array down to a single value. That value can be a number, string, object — anything. Takes 2 arguments: a callback and an initial value.
+
+// const prices = [200, 350, 150, 500];
+
+// // Sum all prices
+// const total = prices.reduce((accumulator, current) => {
+//   return accumulator + current;
+// }, 0); // ← 0 is the starting value
+
+// // Step by step:
+// // acc=0,   cur=200 → 200
+// // acc=200, cur=350 → 550
+// // acc=550, cur=150 → 700
+// // acc=700, cur=500 → 1200 
+
+// const cart = [199, 499, 149, 299];
+// const total = cart.reduce((acc, cur) => acc + cur, 0);
+// console.log("Total: ₹" + total);
