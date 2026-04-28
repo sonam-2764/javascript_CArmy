@@ -204,3 +204,27 @@ for(let [keys,value] of m1){
 // const nums = [1, 2, 3, 4, 5];
 // const doubled = nums.map(n => n * 2);
 // console.log(doubled);
+
+
+
+
+
+//FILTER CLAUDE
+// 🧠 Think of it like...
+// A security guard at a club who lets in only people who pass the test. The ones who fail are removed — you get a shorter list back.
+// What it does
+// Creates a new array with only the elements that pass a test (return true). Array can get shorter — elements failing the test are removed.
+
+// const marks = [35, 72, 48, 90, 28, 85];
+
+// // Keep only students who passed (≥50)
+// const passed = marks.filter(m => m >= 50);
+// // passed = [72, 48? NO — 48 fails, 90, 85]
+// // passed = [72, 90, 85]
+
+// // Filter products by price
+// const expensive = products.filter(p => p.price > 500);
+
+// const ages = [14, 18, 21, 16, 25, 13];
+// const adults = ages.filter(age => age >= 18);
+// console.log(adults);
