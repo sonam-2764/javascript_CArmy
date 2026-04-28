@@ -285,3 +285,48 @@ for(let [keys,value] of m1){
 // const unique = [...new Set(tags)];
 // console.log(unique);
 // console.log("Count:", unique.length);
+
+
+
+
+
+
+//MAP OBJECT CLAUDE
+// 🧠 Think of it like...
+// A dictionary/phonebook — but way more powerful. Unlike a regular object, the key can be anything: a string, number, or even another object!
+// What it does
+// A Map stores key-value pairs. Better than plain objects when you need non-string keys, ordered entries, or want to check size easily.
+
+// const scores = new Map();
+
+// // Set key-value pairs
+// scores.set("Aman", 95);
+// scores.set("Priya", 88);
+// scores.set("Rohan", 72);
+
+// scores.get("Priya"); // 88
+// scores.has("Aman");  // true
+// scores.size;         // 3
+
+// // Loop through Map
+// scores.forEach((value, key) => {
+//   console.log(key + ": " + value);
+// });
+
+// Plain Object ❌
+// Keys must be strings.
+// No guaranteed order.
+// No .size property.
+// Harder to iterate.
+// Map ✅
+// Any type as key.
+// Insertion order kept.
+// .size built in.
+// Easy to loop.
+
+
+// const studentMap = new Map();
+// studentMap.set("Rahul", { marks: 92, city: "Bhopal" });
+// studentMap.set("Sneha", { marks: 78, city: "Indore" });
+// console.log(studentMap.get("Rahul"));
+// console.log("Total students:", studentMap.size);
