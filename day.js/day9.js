@@ -166,3 +166,143 @@ function double(value){
 //above two lines and below 2 lines will produce the same result
  const n = double(20)(5);
  console.log(n); 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---
+
+// **Q2 — Hoisting with Functions (Detailed)**
+
+// When JS runs your file, **before executing any code**, it does a hoisting pass. Here's what JS actually sees:
+
+// ```javascript
+// // WHAT YOU WROTE
+// greet();
+// sayHi();
+
+// function greet() {
+//     console.log("Hello!");
+// }
+
+// var sayHi = function() {
+//     console.log("Hi!");
+// }
+// ```
+
+// ```javascript
+// // WHAT JS ACTUALLY SEES AFTER HOISTING
+// function greet() {        // ✅ fully hoisted - entire body moves up
+//     console.log("Hello!");
+// }
+// var sayHi;                // ⚠️ only declaration hoisted, value is undefined
+
+// greet();                  // ✅ works! function is fully available
+// sayHi();                  // ❌ sayHi is undefined here, calling undefined() = TypeError
+
+// sayHi = function() {      // assignment happens here, too late
+//     console.log("Hi!");
+// }
+// ```
+
+// **The rule is simple:**
+// - `function declaration` → entire function hoisted ✅
+// - `var functionName = function()` → only `var functionName` hoisted as `undefined` ❌
+
+// **Interview one liner:**
+// > "Function declarations are fully hoisted but function expressions are not — only the variable declaration is hoisted, not the assignment"
+
+// ---
+
+// **Q4 — Closure in Loop (Detailed)**
+
+// ```javascript
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 1000);
+// }
+// ```
+
+// **Why it prints `3,3,3`:**
+
+// Think of it this way — `var` creates ONE single `i` variable shared across the entire loop. The setTimeout callbacks don't execute immediately, they wait 1000ms. By that time the loop has already finished and `i` is `3`. All 3 callbacks look at the **same `i`** and see `3`.
+
+// ```
+// Loop runs:  i=0 → schedules callback
+//             i=1 → schedules callback  
+//             i=2 → schedules callback
+//             i=3 → loop ends
+
+// 1000ms later: all 3 callbacks wake up
+//               all 3 look at i → i is 3
+//               prints: 3, 3, 3
+// ```
+
+// ---
+
+// **Fix 1 — Use `let`**
+// ```javascript
+// for (let i = 0; i < 3; i++) {
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 1000);
+// }
+// // prints 0, 1, 2 ✅
+// ```
+// `let` creates a **brand new `i` for each iteration**. Each callback captures its own private copy of `i`. Simple and clean — this is what you'd use in real code.
+
+// ---
+
+// **Fix 2 — IIFE (Immediately Invoked Function Expression)**
+// ```javascript
+// for (var i = 0; i < 3; i++) {
+//     (function(j) {          // creates new scope, captures i as j
+//         setTimeout(function() {
+//             console.log(j); // j is private to this function call
+//         }, 1000);
+//     })(i);                  // immediately call with current i
+// }
+// // prints 0, 1, 2 ✅
+// ```
+
+// The IIFE creates a **new function scope on every iteration**. We pass `i` as argument `j`, so each iteration has its own `j` that doesn't change. This was the standard fix before `let` existed in ES6.
+
+// ```
+// Iteration 0: IIFE called with j=0, callback captures j=0
+// Iteration 1: IIFE called with j=1, callback captures j=1
+// Iteration 2: IIFE called with j=2, callback captures j=2
+
+// 1000ms later: 
+//   first callback  → j is 0 → prints 0
+//   second callback → j is 1 → prints 1
+//   third callback  → j is 2 → prints 2
+// ```
+
+// ---
+
+// **The core concept connecting both fixes:**
+
+// > Closures capture **variables**, not **values**. So if the variable changes, the closure sees the changed value. The fix is always to create a **new scope** so each closure gets its own private variable.
+
+// This is one of the most asked JS interview questions ever. If someone asks you about the closure loop problem in an interview, walk them through all three versions — broken with `var`, fixed with `let`, fixed with IIFE. That answer alone will impress most interviewers. 🎯
