@@ -18,4 +18,9 @@
 //Windows.document.getElementById("title");
 //console.dir(document);
 //this helps to create an object of an element
+//Why had we used getElementById ?
+//if not we had to traverse there like this
+//document.documentElement.children[1].children[0].textContent = "Hello there";
+//this is quite hectic so we use 
+//const temp = doccument.getElementById("first");
 
