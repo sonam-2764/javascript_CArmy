@@ -25,31 +25,16 @@
 //const temp = doccument.getElementById("first");
 
 
+//innerText   // only visible text
+//textContent // all text including hidden
+//innerHTML   // text + HTML tags inside
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// By ID //document.getElementById('myId')
+// By class //document.getElementsByClassName('myClass')
+// By tag //document.getElementsByTagName('p')
+// CSS selector //document.querySelector('.box')
+// All matches //document.querySelectorAll('li')
 
 
 
