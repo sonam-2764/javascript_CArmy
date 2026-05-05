@@ -1,0 +1,30 @@
+// // EVENTS
+
+//text changes when clicked
+function handleClick() {
+    let element = document.getElementById("first");
+    element.textContent = "I am Sonam";
+}
+
+
+
+
+
+// // CLAUDE ABOUT EVENT
+// Events — the browser talking to your code
+// An event is something that happens in the browser — a user clicks a button, presses a key, moves the mouse, submits a form. JavaScript lets you listen for these moments and run code when they occur.
+
+// Think of it like a doorbell. The doorbell is wired up (addEventListener). Someone rings it (the event fires). You answer the door (your function runs).
+
+// The 3 ways to handle events
+// // 1. Inline HTML — avoid this, mixes JS into HTML
+// <button onclick="doSomething()">Click</button>
+
+// // 2. DOM property — only one handler per event
+// btn.onclick = function() { console.log('clicked'); };
+
+// // 3. addEventListener — the correct modern way
+// btn.addEventListener('click', function() {
+//   console.log('clicked');
+// });
+// addEventListener is preferred — it lets you attach multiple listeners to the same element and remove them later.
