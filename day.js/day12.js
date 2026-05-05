@@ -10,7 +10,7 @@ const element = document.getElementById("first");
 element.after(newElement);
 // element.before(newElement);
 
-const newElement2 = document.createElement('h3');
+const newElement2 = document.createElement('h3'); 
 newElement2.textContent = "I am 2nd year student";
 newElement2.id = "third";
 //newElement2.className = "Student";
