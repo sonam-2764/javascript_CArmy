@@ -50,20 +50,20 @@ element.before(newElement2.setAttribute("hello", "5"));
 
 const arr = ["Milk", "Halwa", "Paneer","tofu","Tea"];
 
-const unorderElement = document.getElementById("listing");
+const unorderElement = document.getElementById("listing");//select parent
 const fragment = document.createDocumentFragment();
 // array
 
 for(let food of arr){
-    const list = document.createElement("li");
+    const list = document.createElement("li");//create list
     list.textContent = food;
     fragment.append(list);
 }
-
-unorderElement.append(fragment);
+//pehle sb kuch fragment me chla gya
+unorderElement.append(fragment);//ab sb ek baar me hi update ho gya
 
 const s1 = document.getElementById("first");
-s1.remove();
+s1.remove();//delete
 
 
 const month = document.getElementById("ten");
@@ -115,7 +115,23 @@ month.prepend(lister);
 // // Getting attribute values
 // heading.getAttribute("data-type")
 
+// Reading user input from a form field
+// const userInput = document.querySelector("#myInput").value
+// console.log(userInput)  // whatever the user typed
 
 
 
 
+
+// //DELETE in CRUD
+// Method 1: Remove the element itself (modern, preferred)
+// const item = document.querySelector(".card")
+// item.remove()
+
+// // Method 2: Remove a child from its parent (older method)
+// const parent = document.querySelector("#list")
+// const child = document.querySelector("#item1")
+// parent.removeChild(child)
+
+// // Method 3: Clear everything inside an element
+// document.querySelector("#container").innerHTML = ""
