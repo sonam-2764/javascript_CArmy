@@ -49,3 +49,37 @@ function handleClick() {
 // box.addEventListener('dblclick',  () => log('double clicked!'));
 // box.addEventListener('mouseover', () => log('mouse entered'));
 // box.addEventListener('mouseout',  () => log('mouse left'));
+
+
+
+
+
+// //KEYBOARD EVENT
+// Keyboard event types
+// keydown
+// keyup
+// keypress
+// (deprecated)
+// const input = document.querySelector('input');
+
+// input.addEventListener('keydown', (e) => {
+//   console.log('key pressed:', e.key);     // "a", "Enter", "ArrowUp"
+//   console.log('keyCode:', e.keyCode);    // 65, 13, 38  (older)
+//   console.log('ctrl held?', e.ctrlKey);  // true / false
+// });
+
+// input.addEventListener('keyup', (e) => {
+//   // fires when key is released
+// });
+// Use keydown for detecting key combos (Ctrl+S). Use keyup for "finished typing" actions.
+
+// Live demo — type here
+// hii
+// keyup: "i"
+// keydown: "i" | ctrlKey: false
+// keyup: "i"
+// keydown: "i" | ctrlKey: false
+// keyup: "h"
+
+
+
