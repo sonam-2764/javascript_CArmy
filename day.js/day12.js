@@ -19,7 +19,7 @@ newElement2.id = "third";
 // // but if we want to assign both name to aa single class
 newElement2.classList.add("Student");
 newElement2.classList.add("Girl");
-ewElement2.classList.remove("Student");
+newElement2.classList.remove("Student");
 console.log(newElement2);
 newElement2.style.backgroundColor = "pink";
 newElement2.style.fontSize = "20px";
@@ -79,3 +79,21 @@ month.prepend(lister);
 
 
 
+
+
+// //CREATE IN CRUD
+// // Step 1: Create a new element
+// const newDiv = document.createElement("div")
+
+// // Step 2: Give it content
+// newDiv.textContent = "I am a new div!"
+// newDiv.innerHTML = "<strong>Bold text</strong>"
+
+// // Step 3: Give it a class or id
+// newDiv.className = "card"
+// newDiv.id = "myDiv"
+
+// // Step 4: Insert it into the page
+// document.body.appendChild(newDiv)          // adds at the END of body
+// document.body.prepend(newDiv)              // adds at the START
+// document.getElementById("list").append(newDiv)  // inside a specific element
