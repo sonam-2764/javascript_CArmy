@@ -28,3 +28,24 @@ function handleClick() {
 //   console.log('clicked');
 // });
 // addEventListener is preferred — it lets you attach multiple listeners to the same element and remove them later.
+
+
+
+
+
+//MOUSE EVENT TYPE
+// Mouse event types
+// click
+// dblclick
+// mousedown
+// mouseup
+// mouseover
+// mouseout
+// mousemove
+// contextmenu
+// const box = document.querySelector('#box');
+
+// box.addEventListener('click',     () => log('clicked!'));
+// box.addEventListener('dblclick',  () => log('double clicked!'));
+// box.addEventListener('mouseover', () => log('mouse entered'));
+// box.addEventListener('mouseout',  () => log('mouse left'));
