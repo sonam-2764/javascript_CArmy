@@ -79,7 +79,7 @@ month.prepend(lister);
 
 
 
-
+// //Claude
 
 // //CREATE IN CRUD
 // // Step 1: Create a new element
@@ -97,3 +97,25 @@ month.prepend(lister);
 // document.body.appendChild(newDiv)          // adds at the END of body
 // document.body.prepend(newDiv)              // adds at the START
 // document.getElementById("list").append(newDiv)  // inside a specific element
+
+
+
+
+
+
+//READ in CRUD
+// const heading = document.querySelector("h1")
+
+// heading.textContent   // plain text inside the tag
+// heading.innerHTML     // HTML inside the tag (including tags)
+// heading.id            // the element's id attribute
+// heading.className     // the element's class attribute
+// heading.value         // for input fields — gets what the user typed
+
+// // Getting attribute values
+// heading.getAttribute("data-type")
+
+
+
+
+
