@@ -79,6 +79,11 @@ month.prepend(lister);
 
 
 
+
+
+
+
+
 // //Claude
 
 // //CREATE IN CRUD
@@ -97,6 +102,12 @@ month.prepend(lister);
 // document.body.appendChild(newDiv)          // adds at the END of body
 // document.body.prepend(newDiv)              // adds at the START
 // document.getElementById("list").append(newDiv)  // inside a specific element
+
+// You can also use insertAdjacentHTML for quick one-liners:
+// jsdocument.getElementById("container").insertAdjacentHTML(
+//   "beforeend",
+//   "<li>New Item</li>"
+// )
 
 
 
@@ -123,6 +134,38 @@ month.prepend(lister);
 
 
 
+
+
+// //UPDATE IN CRUD
+// const para = document.querySelector("p")
+
+// // Change text
+// para.textContent = "Updated text!"
+
+// // Change HTML inside
+// para.innerHTML = "<em>Updated with emphasis!</em>"
+
+// // Change a CSS class
+// para.className = "newClass"
+// para.classList.add("highlight")       // add a class
+// para.classList.remove("highlight")    // remove a class
+// para.classList.toggle("active")       // add if absent, remove if present
+
+// // Change inline styles
+// para.style.color = "red"
+// para.style.fontSize = "20px"
+// para.style.backgroundColor = "#f0f0f0"
+
+// // Change attributes
+// para.setAttribute("id", "newId")
+// para.setAttribute("data-role", "admin")
+
+
+
+
+
+
+
 // //DELETE in CRUD
 // Method 1: Remove the element itself (modern, preferred)
 // const item = document.querySelector(".card")
@@ -135,3 +178,62 @@ month.prepend(lister);
 
 // // Method 3: Clear everything inside an element
 // document.querySelector("#container").innerHTML = ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CRUD on ul/ol with JavaScript
+// Now this is where it gets powerful — adding, reading, updating and deleting <li> items using JS.
+// CREATE — Add a new <li>
+// jsconst ul = document.querySelector("ul")
+
+// // Create a new li
+// const newLi = document.createElement("li")
+// newLi.textContent = "Grapes"
+
+// // Add to end
+// ul.appendChild(newLi)
+
+// // Add to beginning
+// ul.prepend(newLi)
+// READ — Get items from the list
+// jsconst ul = document.querySelector("ul")
+
+// // Get ALL li items
+// const items = ul.querySelectorAll("li")
+
+// // Loop through them
+// items.forEach((item, index) => {
+//   console.log(index, item.textContent)
+// })
+
+// // Get specific li by index
+// ul.children[0].textContent   // first item
+// ul.children[1].textContent   // second item
+// UPDATE — Change an <li>'s text
+// jsconst items = document.querySelectorAll("li")
+
+// // Change the second item (index 1)
+// items[1].textContent = "New Text"
+// DELETE — Remove an <li>
+// jsconst items = document.querySelectorAll("li")
+
+// // Remove specific item
+// items[1].remove()
+
+// // Remove all items (clear the list)
+// document.querySelector("ul").innerHTML = ""
+
