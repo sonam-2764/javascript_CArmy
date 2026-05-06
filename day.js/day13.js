@@ -37,7 +37,7 @@ function handleClick() {
 
 
 
-//MOUSE EVENT TYPE
+// //MOUSE EVENT TYPE
 // Mouse event types
 // click
 // dblclick
