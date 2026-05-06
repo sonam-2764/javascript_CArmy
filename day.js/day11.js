@@ -47,6 +47,8 @@
 
 
 
+
+
 //CLAUDE TEACHING DOM
 //SECTION 1 
 // When your browser loads an HTML file, it converts it into a tree of objects called the DOM. JavaScript uses this tree to read, create, update, or delete parts of your webpage — all without reloading.
