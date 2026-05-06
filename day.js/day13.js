@@ -10,6 +10,10 @@ function handleClick() {
 
 
 
+
+
+
+
 // // CLAUDE ABOUT EVENT
 // Events — the browser talking to your code
 // An event is something that happens in the browser — a user clicks a button, presses a key, moves the mouse, submits a form. JavaScript lets you listen for these moments and run code when they occur.
