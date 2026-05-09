@@ -1,10 +1,38 @@
 // // EVENTS
+ //let element = document.getElementById("first");
+    
+// //text changes when clicked with help of html
+// function handleClick() {
+//    lement.textContent = "I am Sonam";
+// }
 
-//text changes when clicked
-function handleClick() {
-    let element = document.getElementById("first");
-    element.textContent = "I am Sonam";
-}
+const element = document.getElementById("first");
+// element.onclick = function handleClick(){
+//     element.textContent = "Hii everyone";
+// }
+// element.onclick = function handleClick(){
+//     element.textContent = "I am Sonam";//overrides the first one
+// }
+
+//these both will run without problem of overriding
+element.addEventListener('click',() => {
+    element.textContent = "Hii everyone";
+})
+
+element.addEventListener('click', () => {
+    element.style.backgroundColor = "pink";
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 
