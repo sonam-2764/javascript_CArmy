@@ -36,7 +36,7 @@ function handleClick(e){
    parent.removeEventListener('click',handleClick);
 }
 
-parent.addEventListener('click',handleClick)
+parent.addEventListener('click',handleClick);
 
 
 
