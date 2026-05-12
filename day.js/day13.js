@@ -53,10 +53,13 @@ parent.addEventListener('click',handleClick);
 
 
 
-// //BUBBLING--- andar se bahar ki taraf jata h 
+// //BUBBLING
+
+//e is the object of events which stores many information
 // const grandparent = document.getElementById("grandparent");
 // grandparent.addEventListener('click',()=>{
-//     // console.log("GrandParent is clicked");
+    //console.log(e.target); //exactly kaun sa element target hua tha ye bhi pta chl jayega
+//    console.log("GrandParent is clicked");
 // },truel)
 
 // const parent = document.getElementById("parent");
@@ -68,7 +71,7 @@ parent.addEventListener('click',handleClick);
 // const child = document.getElementById("child");
 // child.addEventListener('click',(e)=>{
 //     // console.log(e);
-//     // e.stopPropagation();
+//     // e.stopPropagation(); //stops bubbling
 //     // console.log("child is clicked");
 // })
 
