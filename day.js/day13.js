@@ -50,11 +50,14 @@ parent.addEventListener('click',handleClick);
 //     })
 // }
 
+
+
+
+// //BUBBLING--- andar se bahar ki taraf jata h 
 // const grandparent = document.getElementById("grandparent");
-// grandparent.addEventListener('click',(e)=>{
-//     console.log(e.target);
+// grandparent.addEventListener('click',()=>{
 //     // console.log("GrandParent is clicked");
-// })
+// },truel)
 
 // const parent = document.getElementById("parent");
 // parent.addEventListener('click',(e)=>{
@@ -69,10 +72,12 @@ parent.addEventListener('click',handleClick);
 //     // console.log("child is clicked");
 // })
 
-// capture phase on hai: Top se down aaoge: Us time pe event ko trigger kar diya jaayega
-// capture phase off hai: Event hai usko down to up(Bubbling phase bolte hai, tab trigger kiya jaayega)
+// TRUE --capture phase on hai: Top se down aaoge: Us time pe event ko trigger kar diya jaayega
+// capture phase off hai: Event hai usko down to up andar se bahar(Bubbling phase bolte hai, tab trigger kiya jaayega)
 
-
+//capture phase
+//target phase
+//bublling phase
 
 
 
