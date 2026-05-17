@@ -264,7 +264,8 @@ parent.addEventListener('click',handleClick);
 
 
 
-
+// //CHEATSHEET
+//what you want                              How
 // Listen for a click                       el.addEventListener('click', fn)
 // Stop browser default                      e.preventDefault()
 // Stop bubbling                             e.stopPropagation()
