@@ -623,7 +623,7 @@
 // // The function pauses, but JavaScript engine continues with other tasks
 
 // ```
-
+ 
 // ---
 
 // ## The Pattern:
