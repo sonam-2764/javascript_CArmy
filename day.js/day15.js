@@ -6,15 +6,30 @@ function placeOrder(callback){
 
     setTimeout(() => {
         console.log("Payment is received and order get placed");
-        callback;
+        callback();
 },3000)
 }
 
-function preparingOrder(){
+function preparingOrder(callback){
     console.log("your food preparatin started");
     setTimeout(()=>{
         console.log("Your order is now prepared");
+        callback();
     },3000);
 }
-placeOrder(preparingOrder);
-//preparingOrder();
+
+function pickupOrder(){
+    console.log("Delivery boy is on the way to pick order");
+    setTimeout(()=>{
+        console.log("I've picked up the order");
+    },3000);
+}
+
+
+
+placeOrder(() => {
+    preparingOrder(()=>{
+        pickupOrder();
+    });
+});
+
