@@ -1,5 +1,5 @@
 // //CALLBACK HELL
-//
+//A callback is just a function you pass into another function to be called later. It's the oldest pattern — simple, but gets messy fast.
 // zomato application
 
 function placeOrder(callback){
