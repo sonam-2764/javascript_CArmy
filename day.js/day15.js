@@ -3,16 +3,26 @@
 
 // zomato application
 
-function placeOrder(callback){
-    console.log("Payment is in progress");
+const orderDetail = {
+    orderId: 12345,
+    food: ["Pizza", "biryani"],
+    cost:620,
+    customer_name:"sonam",
+    customer_location:"Bhopal",
+    restaurant_location:"Bhopal"
+}
+
+function placeOrder(orderDetail, callback){
+    console.log(`${orderDetail.cost} Payment is in progress`);
 
     setTimeout(() => {
         console.log("Payment is received and order get placed");
-        callback();
+        orderDetail.status = true;
+        callback(orderDetail);
     },3000);
 }
 
-function preparingOrder(callback){
+function preparingOrder(orderDetail, callback){
     console.log("your food preparation started");
 
     setTimeout(()=>{
@@ -38,9 +48,9 @@ function deliverOrder(){
     },5000);
 }
 
-placeOrder(() => {
+placeOrder(orderDetail, (orderDetail) => {
 
-    preparingOrder(() => {
+    preparingOrder(orderDetail, () => {
 
         pickupOrder(() => {
 
