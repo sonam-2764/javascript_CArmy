@@ -67,3 +67,10 @@ placeOrder(orderDetail, (orderDetail) => {
 
 
 
+//disadvantages of callback
+//1. code is not easily readable and difficult to understand
+//2.debugging is difficult
+//3.control issue 
+
+
+
