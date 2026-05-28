@@ -23,28 +23,31 @@ function placeOrder(orderDetail, callback){
 }
 
 function preparingOrder(orderDetail, callback){
-    console.log("your food preparation started");
+    console.log(`your food preparation started of ${orderDetail.food}`);
 
     setTimeout(()=>{
         console.log("Your order is now prepared");
-        callback();
+        orderDetail.token = 123;
+        callback(orderDetail);
     },3000);
 }
 
-function pickupOrder(callback){
-    console.log("Delivery boy is on the way to pick order");
+function pickupOrder(orderDetail, callback){
+    console.log(`Delivery boy is on the way to pick order from ${orderDetail.restaurant_location}`);
 
     setTimeout(()=>{
         console.log("I've picked up the order");
-        callback();
+        orderDetail.received = "true";
+        callback(orderDetail);
     },3000);
 }
 
 function deliverOrder(){
-    console.log("I'm on my way to deliver order");
+    console.log(`I'm on my way to deliver order ${orderDetail.customer_location}`);
 
     setTimeout(()=>{
         console.log("Order delivered successfully");
+        orderDetail.delivery = "true";
     },5000);
 }
 
@@ -52,9 +55,9 @@ placeOrder(orderDetail, (orderDetail) => {
 
     preparingOrder(orderDetail, () => {
 
-        pickupOrder(() => {
+        pickupOrder(orderDetail, () => {
 
-            deliverOrder();
+            deliverOrder(orderDetail);
 
         });
 
