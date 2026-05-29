@@ -20,6 +20,7 @@ console.log("Hello world Start");
 
 //promise is an object which has three stages : pending, fulfilled , reject
 
+//2nd method
 fetch("https://api.github.com/users")
 .then((response) => {
     return response.json();
