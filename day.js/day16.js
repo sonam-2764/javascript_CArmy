@@ -26,7 +26,12 @@ fetch("https://api.github.com/users")
     return response.json();
 })
 .then((data)=> {
-    console.log(data);
+    //console.log(data);
+    const parent = document.getElementById("first");
+    const image = document.createElement('img');
+    image.src = data[0].avatar_url;
+
+    parent.append(image);
 })
 
 
